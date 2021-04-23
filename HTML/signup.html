@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/index.css">
+    <link rel="stylesheet" href="../Styles/signup.css">
+    <link rel="stylesheet" href="../Styles/form.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="container-sign_up">
+        <header>Introduction</header>
+        <nav>
+            <div class="nav-top" role="navigation">
+                <a href="index.html">Home</a>
+                <a href="basics.html">Basics of</a>
+                <a href="more.html">More</a>
+                <a href="quiz.html">Quiz</a>
+                <a class="active" href="signup.html">Sign Up</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+        <main>
+            <form action="index.html" method="get" class="form_sign_up" id="form_sign_up">
+                <h1>Sign Up</h1>
+                <input type="text" name="User-first" id="user_first" class="textfield" placeholder="First Name">
+                <input type="text" name="User-last" id="user_last" class="textfield" placeholder="Last Name">
+                <input type="date" name="User-date" id="user_date">
+                <div class="radio_box">
+                    <label class="radio_label">
+                        <input type="radio" name="User-gender" id="male" value="male">
+                        Male
+                    </label><br>
+                    <label class="radio_label">
+                        <input type="radio" name="User-gender" id="female" value="female">
+                        Female
+                    </label><br>          
+                    <label class="radio_label">
+                        <input type="radio" name="User-gender" id="other" value="other">
+                        Other
+                    </label><br>
+                </div>
+                <input type="text" name="User-name" id="user_name" class="textfield" placeholder="Nickname">
+                <input type="password" name="User-password" id="user_password" class="textfield" placeholder="Password">
+                <input type="password" name="User-password" id="user_confirm_password" class="textfield" placeholder="Confirm Password">
+                <input type="email" name="User-email" id="user_email" class="textfield" placeholder="Email">
+                <input type="file" name="User-photo" id="user_photo"><br>
+                <input type="submit" value="Sign Up" id="submit_btn">
+            </form>
+        </main>
+        <footer>Footer content</footer>
+    </div>
+</body>
+</html>
