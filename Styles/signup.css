@@ -3,7 +3,7 @@
     width: 205px;
     height: 25px;
     display: inline;
-    color: #CCD1D1;
+    color: black;
     outline: none;
 }
 
@@ -17,45 +17,4 @@
     text-align: center;
     margin: 10px 0px;
     cursor: pointer;
-}
-
-.container-sign_up{
-    max-width: 100%;
-    margin: 0px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
-    grid-auto-rows: minmax(50px,auto);
-    grid-template-areas:"h h h h h h h h"
-                        "n n n n n n n n"
-                        "m m m m m m m m"
-                        "m m m m m m m m"
-                        "m m m m m m m m"
-                        "m m m m m m m m"
-                        "f f f f f f f f";
-}
-
-@media screen and (min-width:700px)
-{
-    .container-sign_up{
-        grid-template-areas:"h h h h h h h h"
-                            "n n n n n n n n"
-                            "m m m m m m m m"
-                            "m m m m m m m m"
-                            "m m m m m m m m"
-                            "m m m m m m m m"
-                            "f f f f f f f f";
-    }
-}
-
-@media screen and (min-width: 1024px)
-{
-    .container-sign_up{
-        grid-template-areas:"h h h h h h h h"
-                            "n n n n n n n n"
-                            "m m m m m m m m"
-                            "m m m m m m m m"
-                            "m m m m m m m m"
-                            "m m m m m m m m"
-                            "f f f f f f f f";
-    }
 }
