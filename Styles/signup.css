@@ -3,9 +3,30 @@
     width: 205px;
     height: 25px;
     display: inline;
-    color: black;
+    color: #CCD1D1;
     outline: none;
+    font-size: 1rem;
+    border: 2px solid #E57373;
+    background: #616161;
+    padding: 10px 10px;
+    transition: background .5s ease .2s;
+    transition: border 1s ease .2s;
+    transition: width .5s ease .2s;
 }
+
+
+.textfield::placeholder, #user_date::placeholder, #user_photo::placeholder{
+    color: #CCD1D1;
+    font-size: 1rem;
+}
+
+.textfield:focus, #user_date:focus, #user_photo:focus{
+    width: 250px;
+    background: #424242;
+    border-color: #EF5350;
+    transition: all .5s ease .1s;
+}
+
 
 .radio_label{
     float: left;
