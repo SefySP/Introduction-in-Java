@@ -1,9 +1,11 @@
 .main_quiz{
     display: block;
+    text-align: left;
 }
 
 .main_quiz h2{
     clear:both; 
+    text-align: center;
 }
 
 
