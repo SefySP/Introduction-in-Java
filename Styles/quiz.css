@@ -1,0 +1,37 @@
+.main_quiz{
+    display: block;
+}
+
+.main_quiz h2{
+    clear:both; 
+}
+
+
+.container_quiz{
+    max-width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-areas:"h h h h h h h h"
+                        "n n n n n n n n"
+                        "m m m m m m m m" 
+                        "m m m m m m m m"
+                        "m m m m m m m m"
+                        "m m m m m m m m"
+                        "f f f f f f f f";
+}
+
+@media screen and (min-width:700px)
+{
+    .nav-top a{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .nav-top a{
+        display: inline;
+    }
+}
