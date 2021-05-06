@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <body>
     
     <div class="container">
-        <header>Introduction</header>
+        <header>Basics of Java</header>
         <nav>
             <div class="nav-top" role="navigation">
                 <a href="index.html">Home</a>
@@ -21,7 +21,79 @@
                 <a href="login.html">Login</a>
             </div>
         </nav>
-        <footer>Footer content</footer>
+        <main class="main">
+            <h2>
+                About Java
+            </h2>
+            <article class="article">
+                &nbsp;&nbsp;&nbsp;Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle) 
+                and released in 1995 as a core component of Sun Microsystems' Java platform. 
+                The original and reference implementation Java compilers, virtual machines, 
+                and class libraries were originally released by Sun under proprietary licenses. 
+                As of May 2007, in compliance with the specifications of the Java Community Process, 
+                Sun had relicensed most of its Java technologies under the GNU General Public License. 
+                Oracle offers its own HotSpot Java Virtual Machine, 
+                however the official reference implementation is the OpenJDK JVM which is free open source software and 
+                used by most developers and 
+                is the default JVM for almost all Linux distributions.
+            </article>
+        </main>
+        <section class="section">
+            <h3>
+                History
+            </h3>
+            <article class="article">
+                &nbsp;&nbsp;&nbsp;James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991. 
+                Java was originally designed for interactive television, but it was too advanced for the digital cable television industry at the time. 
+                The language was initially called Oak after an oak tree that stood outside Gosling's office. 
+                Later the project went by the name Green and was finally renamed Java, from Java coffee, a type of coffee from Indonesia. 
+                Gosling designed Java with a C/C++-style syntax that system and application programmers would find familiar. 
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Sun Microsystems released the first public implementation as Java 1.0 in 1996. 
+                It promised Write Once, Run Anywhere (WORA) functionality, providing no-cost run-times on popular platforms. 
+                Fairly secure and featuring configurable security, it allowed network- and file-access restrictions. 
+                Major web browsers soon incorporated the ability to run Java applets within web pages, 
+                and Java quickly became popular. The Java 1.0 compiler was re-written in Java by Arthur van Hoff to comply strictly 
+                with the Java 1.0 language specification. With the advent of Java 2 (released initially as J2SE 1.2 in December 1998 – 1999), 
+                new versions had multiple configurations built for different types of platforms. 
+                J2EE included technologies and APIs for enterprise applications typically run in server environments, 
+                while J2ME featured APIs optimized for mobile applications. The desktop version was renamed J2SE. 
+                In 2006, for marketing purposes, Sun renamed new J2 versions as Java EE, Java ME, and Java SE, respectively.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;In 1997, Sun Microsystems approached the ISO/IEC JTC 1 standards body 
+                and later the Ecma International to formalize Java, 
+                but it soon withdrew from the process. Java remains a de facto standard, controlled through the Java Community Process. 
+                At one time, Sun made most of its Java implementations available without charge, 
+                despite their proprietary software status. Sun generated revenue from Java through the selling of licenses 
+                for specialized products such as the Java Enterprise System.
+            </article>
+            <h3>
+                JVM & Bytecode
+            </h3>
+            <article class="article">
+                &nbsp;&nbsp;&nbsp;One design goal of Java is portability, which means that programs written for the Java platform 
+                must run similarly on any combination of hardware and operating system with adequate run time support. 
+                This is achieved by compiling the Java language code to an intermediate representation called Java bytecode, 
+                instead of directly to architecture-specific machine code. 
+                Java bytecode instructions are analogous to machine code, but they are intended to be executed 
+                by a virtual machine (VM) written specifically for the host hardware. 
+                End users commonly use a Java Runtime Environment (JRE) installed on their machine for standalone Java applications, 
+                or in a web browser for Java applets.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Standard libraries provide a generic way to access host-specific features such as graphics, threading, and networking.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;The use of universal bytecode makes porting simple. 
+                However, the overhead of interpreting bytecode into machine instructions made interpreted programs almost always run more slowly 
+                than native executables. Just-in-time (JIT) compilers that compile byte-codes to machine code during runtime 
+                were introduced from an early stage. Java itself is platform-independent and is adapted to the particular 
+                platform it is to run on by a Java virtual machine (JVM) for it, 
+                which translates the Java bytecode into the platform's machine language.
+            </article>
+        </section>
+        <footer>
+            Made by Spyros Karalis <br>
+            A.M.: 2022201800070 <br>
+        </footer>
     </div>
 </body>
 </html>
