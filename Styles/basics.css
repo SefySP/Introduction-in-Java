@@ -1,0 +1,59 @@
+.article_aside{
+    font-size: 0.75em;
+}
+
+#javafx_logo{
+    width: 15%;
+    height: 15%;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-areas:"h h h h h h h h"
+                        "n n n n n n n n"
+                        "m m m m m m m m"
+                        "m m m m m m m m"
+                        "s s s s s s s s"
+                        "a a a a a a a a"
+                        "f f f f f f f f";
+}
+
+@media screen and (min-width:769px)
+{
+    .nav-top a{
+        display: inline;
+    }
+    .container{
+        grid-template-areas:"h h h h h h h h"
+                            "n n n n n n n n"
+                            "m m m m m m m m"
+                            "m m m m m m m m"
+                            "s s s s s s a a"
+                            "s s s s s s a a"
+                            "f f f f f f f f";
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    #javafx_logo{
+        width: 146px;
+        height: 66px;
+    }
+    .nav-top a{
+        display: inline;
+    }
+    .container{
+        grid-template-areas:"h h h h h h h h"
+                            "n n n n n n n n"
+                            "m m m m m m m m"
+                            "m m m m m m m m"
+                            "s s s s s s a a"
+                            "s s s s s s a a"
+                            "f f f f f f f f";
+    }
+}
