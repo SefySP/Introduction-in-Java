@@ -3,11 +3,34 @@
     text-align: left;
 }
 
-.main_quiz h2{
-    clear:both; 
+.form_quiz{
+    padding: 0px;
+    text-align: left;
+    display: block;
+    width: auto;
+}
+
+.form_quiz h2{
+    clear:both;
     text-align: center;
 }
 
+#blank_id,#comment_start_id,#comment_end_id{
+    width: 100px;
+    height: 15px;
+    background: #424242;
+    outline: none;
+    color: #EAECEE;
+    border: 2px solid #EF5350;
+}
+
+#blank_id{
+    text-align: center;
+}
+
+#submit_btn{
+    clear: both;
+}
 
 .container_quiz{
     max-width: 100%;
@@ -24,7 +47,7 @@
                         "f f f f f f f f";
 }
 
-@media screen and (min-width:700px)
+@media screen and (min-width:769px)
 {
     .nav-top a{
         display: inline;

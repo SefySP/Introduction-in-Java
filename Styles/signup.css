@@ -3,7 +3,7 @@
     width: 205px;
     height: 25px;
     display: inline;
-    color: #CCD1D1;
+    color: #EAECEE;
     outline: none;
     font-size: 1rem;
     border: 2px solid #E57373;
@@ -16,7 +16,7 @@
 
 
 .textfield::placeholder, #user_date::placeholder, #user_photo::placeholder{
-    color: #CCD1D1;
+    color: #EAECEE;
     font-size: 1rem;
 }
 

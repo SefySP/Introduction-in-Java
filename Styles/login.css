@@ -5,7 +5,7 @@
     text-align: center;
     padding: 20px 10px;
     border: 2px solid #E57373;
-    color: #CCD1D1;
+    color: #EAECEE;
     font-size: 1rem;
     width: 150px;
     outline: none;
@@ -15,7 +15,7 @@
 }
 
 .form_login input[type="text"]::placeholder, .form_login input[type="password"]::placeholder{
-    color: #CCD1D1;
+    color: #EAECEE;
     font-size: 1rem;
 }
 

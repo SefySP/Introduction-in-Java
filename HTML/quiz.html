@@ -1,56 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A short quiz to test your java skills.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="../Styles/index.css">
+    <link rel="stylesheet" href="../Styles/form.css">
     <link rel="stylesheet" href="../Styles/quiz.css">
+    
     <title>Quiz</title>
 </head>
 <body>
     <div class="container container_quiz">
-        <header>Introduction</header>
+        <header>Quiz</header>
         <nav>
             <div class="nav-top" role="navigation">
                 <a href="index.html">Home</a>
                 <a href="basics.html">Basics of</a>
-                <a href="more.html">More</a>
+                <a href="more.html">More content</a>
                 <a class="active" href="quiz.html">Quiz</a>
                 <a href="signup.html">Sign Up</a>
                 <a href="login.html">Login</a>
             </div>
         </nav>
         <main class="section main_quiz">
-            <form action="quiz.html">
+            <form action="quiz.html" method="get" class="form_quiz" id="form_quiz_id">
                 <h2>
                     Test Your Might    
                 </h2>
                 <ul style="float: left;">
                     <li>
-                        What is Java?<br><br>
-                        <input type="checkbox" name="programming" id="programming" value="programming">
-                        <label for="programming">Programming language</label><br>
-                        <input type="checkbox" name="oop" id="oop" value="oop">
-                        <label for="oop">Object-oriented</label><br>
-                        <input type="checkbox" name="coffee" id="coffee" value="coffee">
-                        <label for="coffee">Coffee</label><br>
-                        <input type="checkbox" name="python" id="python" value="python">
-                        <label for="python">Python</label><br>
-                    </li><br>
+                        <h3>
+                            What is Java?
+                        </h3>
+                        <input type="checkbox" name="isJava" id="programming" value="programming">
+                        <label for="programming">Programming language</label>
+                        <br>
+                        <input type="checkbox" name="isJava" id="oop" value="oop">
+                        <label for="oop">Object-oriented</label>
+                        <br>
+                        <input type="checkbox" name="isJava" id="coffee" value="coffee">
+                        <label for="coffee">Coffee</label>
+                        <br>
+                        <input type="checkbox" name="isJava" id="python" value="python">
+                        <label for="python">Python</label>
+                    </li>
                     <li>
-                        Question 2
-                    </li><br>
+                        <h3>
+                            Does Java use JVM?
+                        </h3>
+                        <input type="radio" name="r_w" id="right_id" value="right" required>
+                        <label for="right_id">Right</label>
+                        <br>
+                        <input type="radio" name="r_w" id="wrong_id" value="wrong" required>
+                        <label for="wrong_id">Wrong</label>
+                    </li>
                     <li>
-                        Question 3
-                    </li><br>
+                        <h3>
+                            Which primitive type is used in Java?
+                        </h3>
+                        <input type="radio" name="types" id="type_bool_id" value="type_bool" required>
+                        <label for="type_bool_id">boolean</label>
+                        <br>
+                        <input type="radio" name="types" id="type_inches_id" value="type_inches_id" required>
+                        <label for="type_inches_id">inches</label>
+                        <br>
+                        <input type="radio" name="types" id="type_string_id" value="type_string" required>
+                        <label for="type_string_id">String</label>
+                        <br>
+                        <input type="radio" name="types" id="type_void_id" value="type_void" required>
+                        <label for="type_void_id">void</label>
+                    </li>
                     <li>
-                        Question 4
-                    </li><br>
+                        <h3>
+                            Fill in the blank so the program output is "Yeah I did it!"
+                        </h3>
+                        <pre>
+public class App 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println(<input type="text" name="blank" id="blank_id" required>); 
+    }
+}
+                        </pre>
+                    </li>
                     <li>
-                        Question 5
-                    </li><br>
+                        <h3>
+                            Fill in the blanks to be a multiple-line comment.
+                        </h3>
+                        <pre>
+public class App 
+{
+    <input type="text" name="comment_start" id="comment_start_id" required>
+    *    This is a multiple-line comment
+    *
+    *
+    <input type="text" name="comment_end" id="comment_end_id" required>
+    public static void main(String[] args) 
+    {
+        System.out.println(); 
+    }
+}
+                        </pre>
+                    </li>
                 </ul>
+                <input type="submit" value="Submit" id="submit_btn">
             </form>
         </main>
         <footer>
