@@ -15,6 +15,12 @@
     text-align: center;
 }
 
+pre{
+    padding: 10px;
+    border: 2px solid #212121;
+    background-color: #424242;
+}
+
 #blank_id,#comment_start_id,#comment_end_id{
     width: 100px;
     height: 15px;

@@ -49,9 +49,8 @@
     display: block;
 }
 
-[class*="form_"] h1{
-    text-transform: uppercase;
-    font-weight: 400;
+[class*="form_"] h2{
+    font-weight: 600;
 }
 
 #submit_btn{
